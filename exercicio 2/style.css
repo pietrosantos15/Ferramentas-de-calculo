@@ -1,0 +1,72 @@
+body {
+    background-color: #0d1b2a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ff4c29;
+}
+
+.exercises {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: #1b263b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+.exercise-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid #ff4c29;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.exercise-item:hover {
+    background-color: #ff4c29;
+    color: white;
+}
+
+#res {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button {
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 4px;
+}
+
+input {
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+}
