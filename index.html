@@ -1,25 +1,74 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Página Inicial</title>
+    <title>Ferramentas da Empresa</title>
 </head>
 <body>
-    <h1>Ferramentas da empresa</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 animate-navbar">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">Ferramentas da Empresa</a>
+        </div>
+    </nav>
 
-        <a href="exemplo 1/exemplo1.html"><button>Calculadora</button></a>
-        <a href="exercicio1/index.html"><button>Cálculo de horas extras</button></a>
-        <a href="exercicio 2/index.html"><button>Aumento de salário</button></a>
-        <a href="exercicio3/index.html"><button>Transporte de colaboradores</button></a>
-        
-        <label for="res"></label>
-        <p id="res"></p>
-        
-    
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="hero-section animate-fade-in">
+                    <h1 class="display-4 mb-4">Calculadoras</h1>
+                    <p class="lead mb-5">Escolha a ferramenta que deseja utilizar</p>
+                </div>
+
+                <div class="tools-grid">
+                    <a href="exemplo 1/exemplo1.html" class="tool-card animate-slide-up">
+                        <div class="card hover-effect">
+                            <div class="card-body">
+                                <h5 class="card-title">Calculadora</h5>
+                                <p class="card-text">Realize cálculos básicos</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="exercicio1/index.html" class="tool-card animate-slide-up" style="animation-delay: 0.2s">
+                        <div class="card hover-effect">
+                            <div class="card-body">
+                                <h5 class="card-title">Cálculo de Horas Extras</h5>
+                                <p class="card-text">Calcule horas extras dos funcionários</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="exercicio 2/index.html" class="tool-card animate-slide-up" style="animation-delay: 0.4s">
+                        <div class="card hover-effect">
+                            <div class="card-body">
+                                <h5 class="card-title">Aumento de Salário</h5>
+                                <p class="card-text">Calcule aumentos salariais</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="exercicio3/index.html" class="tool-card animate-slide-up" style="animation-delay: 0.6s">
+                        <div class="card hover-effect">
+                            <div class="card-body">
+                                <h5 class="card-title">Transporte de Colaboradores</h5>
+                                <p class="card-text">Gerencie o transporte da equipe</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mt-5">
+                    <label for="res" class="form-label"></label>
+                    <p id="res" class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

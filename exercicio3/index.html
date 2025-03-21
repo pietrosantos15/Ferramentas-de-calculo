@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Transporte de Colaboradores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../cssarquivos.css">
     <script src="exercicio3.js" defer></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 animate-navbar">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">Transporte de colaboradores</a>
+        </div>
+    </nav>
     
-    <div class="box">
-        <h1>Transporte de colaboradores</h1>
-        <label for="pessoas">Pessoas:</label>
-        <br>
-        <input type="number" name="pessoas" id="salario"> <br>
-        <label for="res"></label> 
-        <br>
+    <div class="container">
+        <div class="calculator-box animate-fade-in">
+            <h1 class="display-4 mb-4">Transporte de Colaboradores</h1>
+            
+            <div class="input-group mb-4">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="salario" placeholder="Pessoas">
+                    <label for="salario">Pessoas</label>
+                </div>
+            </div>
 
-        <label for="dias"> Dias:</label>
-        <br>
-        <input type="number" name="dias" id="dias"> <br>
-        <label for="res"></label> 
+            <div class="input-group mb-4">
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="dias" placeholder="Dias">
+                    <label for="dias">Dias</label>
+                </div>
+            </div>
 
-        <br>
-        
-        <button onclick="calcular()">Calcular</button>
-        <label for="res"></label>
-        <a href="../index.html"><button>Voltar</button></a>
-        <button onclick="limpar()">Limpar</button>
-        <p id="res"></p>
+            <div class="button-grid">
+                <button class="btn btn-primary" onclick="calcular()">Calcular</button>
+                <button class="btn btn-secondary" onclick="limpar()">Limpar</button>
+                <a href="../index.html" class="btn btn-outline-primary">Voltar</a>
+            </div>
 
-
+            <div class="result-box mt-4">
+                <p id="res" class="lead"></p>
+            </div>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
